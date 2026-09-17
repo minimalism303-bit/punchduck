@@ -43,6 +43,8 @@ VST3_CATEGORIES "Fx" "Dynamics"
 AU_MAIN_TYPE "kAudioUnitType_Effect"
 COPY_PLUGIN_AFTER_BUILD FALSE)
 
+juce_generate_juce_header (PunchDuck)
+
 target_sources (PunchDuck PRIVATE
 Source/PluginProcessor.cpp
 Source/PluginEditor.cpp)
